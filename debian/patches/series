@@ -163,3 +163,11 @@ ubuntu/git-aarch64-Accept-PLT-calls-to-__getauxval-within-libc..patch
 ubuntu/submitted-broadcast-to-prevent-deadlock.diff
 ubuntu/git-lp1928508-reversing-calculation-of-__x86_shared_non_temporal.patch
 ubuntu/aarch64-memcpy-improvements.patch
+
+lp1910312-sysvipc-Fix-SEM_STAT_ANY-kernel-argument-pass-BZ-266.patch
+
+lp2001932/0001-Fix-avx2-strncmp-offset-compare-condition-check-BZ-2.patch
+lp2001932/0002-strncmp-Add-a-testcase-for-page-boundary-BZ-25933.patch
+
+lp2001975/0001-x86-Fix-__wcsncmp_avx2-in-strcmp-avx2.S-BZ-28755.patch
+lp2001975/0002-string-Add-a-testcase-for-wcsncmp-with-SIZE_MAX-BZ-2.patch

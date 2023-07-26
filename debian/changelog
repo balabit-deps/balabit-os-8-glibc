@@ -1,3 +1,29 @@
+glibc (2.31-0ubuntu9.12) focal; urgency=medium
+
+  * Drop SVE memcpy implementation due to kernel-related performance
+    regression
+
+ -- Simon Chopin <schopin@ubuntu.com>  Wed, 26 Jul 2023 09:44:39 +0200
+
+glibc (2.31-0ubuntu9.11) focal; urgency=medium
+
+  * Drop memcmp arm64 SIMD optimization patch due to performance regression
+    on Raspberry Pi 3+ and 4
+
+ -- Simon Chopin <schopin@ubuntu.com>  Fri, 07 Jul 2023 10:12:59 +0200
+
+glibc (2.31-0ubuntu9.10) focal; urgency=medium
+
+  [ Andrei Gherzan ]
+  * d/p/lp1910312: Backport upstream fix for SEM_STAT_ANY (LP: #1910312)
+
+  [ Simon Chopin ]
+  * d/p/lp1999551/*: backport mem{cmp,cpy} optimizations for arm64 (LP: #1999551)
+  * d/p/lp2001932/*: fix segfault in AVX2 strncmp (LP: #2001932)
+  * d/p/lp2001975/*: fix overflow in AVX2 wcsncmp (LP: #2001975)
+
+ -- Simon Chopin <schopin@ubuntu.com>  Wed, 31 May 2023 17:57:25 +0200
+
 glibc (2.31-0ubuntu9.9) focal; urgency=medium
 
   * Disable testsuite on riscv64. It is failing maths tests intermittently in
